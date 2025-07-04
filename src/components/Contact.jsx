@@ -107,12 +107,12 @@ const Contact = () => {
               <div className="space-y-2 text-gray-300">
                 <p><span className="text-blue-400">Phone:</span> +92 312 7327169 / 0355 8372706</p>
                 <p><span className="text-blue-400">Location:</span> Rawalpindi, Pakistan</p>
-                <p><span className="text-blue-400">Portfolio:</span> 
+                {/* <p><span className="text-blue-400">Portfolio:</span> 
                   <a href="https://portfolio-react-two.vercel.app/" target="_blank" rel="noopener noreferrer" 
                      className="text-blue-400 hover:text-blue-300 ml-2">
                     View Portfolio
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
