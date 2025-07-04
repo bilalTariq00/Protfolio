@@ -64,7 +64,7 @@ const Hero = () => {
             <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-gradient-to-r from-green-400 to-cyan-500 rounded-full animate-bounce" style={{ animationDelay: '1s' }}></div>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient bg-300% relative">
+          <h1 className="text-4xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient bg-300% relative">
             Muhammad Bilal
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent opacity-50 blur-sm"></div>
           </h1>

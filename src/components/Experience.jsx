@@ -16,7 +16,7 @@ const Experience = () => {
       ]
     },
     {
-      title: "Full Star Developer",
+      title: "Full Stack Developer",
       company: "Softwise Solutions",
       location: "Remote",
       period: "Jul 2024 – Jan 2025",
