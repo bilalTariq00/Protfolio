@@ -97,7 +97,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
             <button 
-              onClick={() => window.open('/resume.pdf', '_blank')}
+              onClick={() => window.open('/MuhmmadBilalCv.pdf', '_blank')}
               className="group px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-xl font-semibold hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 backdrop-blur-sm bg-white/5 flex items-center justify-center gap-2"
             >
               <Download size={20} />
