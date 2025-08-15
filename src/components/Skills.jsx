@@ -1,61 +1,45 @@
 "use client";
 import React, { useState } from 'react';
-import { Code2, Database, Cloud, Wrench } from 'lucide-react';
+import { Code2, Database, Cloud, Wrench, PhoneIcon } from 'lucide-react';
 
 const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
 
   const skillCategories = [
-    {
-      title: "Frontend",
-      icon: Code2,
-      color: "from-cyan-500 to-blue-500",
-      skills: [
-        { name: "React.js", level: 90, color: "bg-gradient-to-r from-cyan-400 to-blue-500" },
-        { name: "Next.js", level: 85, color: "bg-gradient-to-r from-blue-400 to-purple-500" },
-        { name: "TypeScript", level: 80, color: "bg-gradient-to-r from-purple-400 to-pink-500" },
-        { name: "Tailwind CSS", level: 90, color: "bg-gradient-to-r from-teal-400 to-cyan-500" },
-        { name: "JavaScript", level: 85, color: "bg-gradient-to-r from-yellow-400 to-orange-500" },
-        { name: "HTML5", level: 95, color: "bg-gradient-to-r from-orange-400 to-red-500" },
-        { name: "CSS3", level: 90, color: "bg-gradient-to-r from-pink-400 to-purple-500" }
-      ]
-    },
-    {
-      title: "Backend",
-      icon: Database,
-      color: "from-purple-500 to-pink-500",
-      skills: [
-        { name: "Node.js", level: 80, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
-        { name: "Express.js", level: 75, color: "bg-gradient-to-r from-gray-400 to-slate-500" },
-        { name: "MongoDB", level: 85, color: "bg-gradient-to-r from-green-500 to-teal-500" },
-        { name: "REST APIs", level: 85, color: "bg-gradient-to-r from-blue-500 to-indigo-500" }
-      ]
-    },
-    {
-      title: "Cloud & DevOps",
-      icon: Cloud,
-      color: "from-green-400 to-teal-500",
-      skills: [
-        { name: "AWS Amplify", level: 80, color: "bg-gradient-to-r from-orange-400 to-yellow-500" },
-        { name: "AWS Cognito", level: 75, color: "bg-gradient-to-r from-red-400 to-pink-500" },
-        { name: "AWS S3", level: 80, color: "bg-gradient-to-r from-indigo-400 to-purple-500" },
-        { name: "Vercel", level: 90, color: "bg-gradient-to-r from-gray-700 to-black" },
-        { name: "Git", level: 85, color: "bg-gradient-to-r from-red-500 to-orange-500" }
-      ]
-    },
-    {
-      title: "Tools & Technologies",
-      icon: Wrench,
-      color: "from-orange-400 to-red-500",
-      skills: [
-        { name: "LiveKit", level: 70, color: "bg-gradient-to-r from-violet-400 to-purple-500" },
-        { name: "Web3", level: 65, color: "bg-gradient-to-r from-yellow-500 to-orange-600" },
-        { name: "Stripe", level: 75, color: "bg-gradient-to-r from-blue-600 to-purple-600" },
-        { name: "Sanity CMS", level: 80, color: "bg-gradient-to-r from-red-500 to-pink-500" },
-        { name: "GitHub", level: 85, color: "bg-gradient-to-r from-gray-600 to-gray-800" }
-      ]
-    }
-  ];
+  {
+    title: "Web Development",
+    icon: Code2,
+    color: "from-cyan-500 to-blue-500",
+    skills: [
+      { name: "HTML5",      level: 95, color: "bg-gradient-to-r from-orange-400 to-red-500" },
+      { name: "CSS3",       level: 90, color: "bg-gradient-to-r from-pink-400 to-purple-500" },
+      { name: "JavaScript", level: 85, color: "bg-gradient-to-r from-yellow-400 to-orange-500" },
+      { name: "React.js",   level: 90, color: "bg-gradient-to-r from-cyan-400 to-blue-500" },
+      { name: "WordPress",  level: 75, color: "bg-gradient-to-r from-gray-400 to-slate-500" },
+      { name: "GitHub",     level: 85, color: "bg-gradient-to-r from-gray-600 to-gray-800" }
+    ]
+  },
+  {
+    title: "Mobile & CMS",
+    icon: PhoneIcon,
+    color: "from-green-400 to-teal-500",
+    skills: [
+      { name: "React Native", level: 85, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
+      { name: "API Integration", level: 80, color: "bg-gradient-to-r from-blue-500 to-indigo-500" },
+      { name: "RESTful APIs",  level: 85, color: "bg-gradient-to-r from-purple-400 to-pink-500" }
+    ]
+  },
+  {
+    title: "Backend Development",
+    icon: Database,
+    color: "from-purple-500 to-pink-500",
+    skills: [
+      { name: "Node.js",    level: 80, color: "bg-gradient-to-r from-green-400 to-emerald-500" },
+      { name: "Express.js", level: 75, color: "bg-gradient-to-r from-gray-400 to-slate-500" },
+      { name: "MongoDB",    level: 85, color: "bg-gradient-to-r from-green-500 to-teal-500" }
+    ]
+  }
+]
 
   return (
     <section id="skills" className="py-20 relative">
@@ -73,7 +57,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
